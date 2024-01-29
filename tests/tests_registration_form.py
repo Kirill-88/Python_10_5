@@ -18,7 +18,7 @@ def test_contact_information():
     browser.element('.react-datepicker__month-select').element(by.text('November')).click()
     browser.element('.react-datepicker__day--026').click()
 
-    browser.element('#subjectsInput').type('football, Shantaram, Kiss')
+    browser.element('#subjectsInput').type('Arts').press_enter()
     browser.element('[for="hobbies-checkbox-1"]').click()
     browser.element('[for="hobbies-checkbox-2"]').click()
     browser.element('[for="hobbies-checkbox-3"]').click()
@@ -36,6 +36,7 @@ def test_contact_information():
         'Male',
         '8901372384',
         '26 November,2001',
+        'Arts',
         'Sports, Reading, Music',
         'qa-2-min.jpeg',
         'п. Хатанга, ул. Безымянная, д. 7/6 стр. 53, 606814',
